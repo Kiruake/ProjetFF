@@ -1,27 +1,37 @@
 <script setup lang="ts">
-import Icon_envelopeClosed_ from './icons/🦆 icon _envelope closed_.vue';
-import Icon_home_Vue from './icons/🦆 icon _home_.vue';
-import Icon_person_Vue from './icons/🦆 icon _person_.vue';
-import Group from './icons/Group.vue';
-import image7 from './icons/image 7.vue';
+import IconDefis from './icons/IconDefis.vue';
+import IconAccueil from './icons/IconAccueil.vue';
+import IconMessage from './icons/IconMessage.vue';
+import IconProfil from './icons/IconProfil.vue';
+import IconLoc from './icons/IconLoc.vue';
 </script>
 
 <template>
-    <footer>
-
-        <nav>
+    <footer class="mt-6">
+        <nav class="bg-stone-400 py-4 drop-shadow-3xl">
             <div>
-                <p class="underline mt-34 text-3xl">underline</p>
-                <ul class="flex">
+                <ul class="flex justify-center gap-7">
+
                     <li><a href="">
-                            <Icon_envelopeClosed_ />
-                        </a></li>
+                    <IconAccueil/>
+                     </a></li>
+
                     <li><a href="">
-                            <Icon_home_Vue />
-                        </a></li>
+                    <IconDefis/>
+                    </a></li>
+
                     <li><a href="">
-                            <Icon_person_Vue />
-                        </a></li>
+                    <IconLoc/>
+                    </a></li>
+
+                    <li><a href="">
+                    <IconMessage/>
+                    </a></li>
+
+                    <li><a href="">
+                    <IconProfil/>
+                    </a></li>
+                         
                 </ul>
             </div>
         </nav>
