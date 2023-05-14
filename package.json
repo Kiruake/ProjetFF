@@ -1,5 +1,5 @@
 {
-  "name": "projetff",
+  "name": "ProjetFinal",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.3.2",
-    "vue-router": "^4.2.0"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
- "devDependencies": {
+  "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.14.2",
     "@vitejs/plugin-vue": "^4.0.0",
@@ -33,8 +33,16 @@
     "vite": "^4.1.4",
     "vue-tsc": "^1.2.0"
   },
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11078709&assignment_repo_type=AssignmentRepo)\r # R212 Intégration TP n°1",
   "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://Kiruake: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@github.com/MMI-SAE-203/r212-2023-tp1-Kiruake.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/MMI-SAE-203/r212-2023-tp1-Kiruake/issues"
+  },
+  "homepage": "https://github.com/MMI-SAE-203/r212-2023-tp1-Kiruake#readme"
 }

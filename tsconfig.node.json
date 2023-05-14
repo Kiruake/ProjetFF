@@ -1,9 +1,10 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"],
   "compilerOptions": {
+    "importsNotUsedAsValues": "remove",
+    "preserveValueImports": false,
     "composite": true,
-    "module": "ESNext",
     "types": ["node"]
   }
 }
