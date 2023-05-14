@@ -8,7 +8,7 @@ import IconLoc from './icons/IconLoc.vue';
 
 <template>
     <footer class="mt-6">
-        <nav class="bg-stone-400 py-4 drop-shadow-3xl">
+        <nav class="bg-white py-4 drop-shadow-3xl">
             <div>
                 <ul class="flex justify-center gap-7">
 
@@ -16,11 +16,11 @@ import IconLoc from './icons/IconLoc.vue';
                     <IconAccueil/>
                      </a></li>
 
-                    <li><a href="">
+                    <li class="pr-20"><a href="">
                     <IconDefis/>
                     </a></li>
 
-                    <li><a href="">
+                    <li class="absolute -top-4"><a href="">
                     <IconLoc/>
                     </a></li>
 
