@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import Footerpage from "./components/FooterPage.vue";
+import { RouterLink, RouterView } from 'vue-router'
+import FooterPage from "./components/Footerpage.vue"
+import HeaderPage from "./components/HeaderPage.vue"
+import Premium from './components/Premium.vue';
 </script>
 
 <template>
-  <main></main>
-  <Footerpage/>
+
+ <HeaderPage /><FooterPage /><Premium/>
+  
+   <RouterView />
 </template>
