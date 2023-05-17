@@ -4,7 +4,7 @@
 
 <template>
 
-    <div class="w-[329px] h-[86px] relative mt-6">
+    <div class="w-[329px] h-[86px] relative mt-6 z-0">
       <div class="w-[328px] h-20 absolute left-0 top-px rounded-xl bg-black/[0.35]"></div>
       <div class="w-[328px] h-20 absolute left-[-1px] top-[-1px] rounded-xl bg-white"></div>
       <p class="absolute left-[127px] top-[5px] text-2xl font-semibold text-center text-black">Arena</p>
