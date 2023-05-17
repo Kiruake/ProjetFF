@@ -12,7 +12,8 @@ module.exports = {
         '3xl': '0 -2px 4px rgba(0, 0, 0, 0.26)',
       },
 
-      colors: { 'bg-blue-500' : 'rgba(46, 93, 145, 1) ',  
+      colors: { 
+        'bg-blue-500': '',  
 
       }
     }

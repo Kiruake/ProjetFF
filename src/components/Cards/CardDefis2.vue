@@ -5,7 +5,7 @@
   ></div>
   <div class="w-[350px] h-[123px] absolute left-[-1px] top-[-1px] rounded-[20px] bg-white"></div>
   <img
-    src="../images/Imagedefis2.png"
+    src="/images/Imagedefis2.png"
     class="w-[350px] h-[67px] absolute left-[-1px] top-[-1px] rounded-tl-[20px] rounded-tr-[20px] object-cover"
   />
   <p class="absolute left-[60px] top-[22px] text-xl font-semibold text-center text-white">

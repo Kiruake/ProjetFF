@@ -4,11 +4,11 @@ import IconAccueil from '@/components/icons/IconAccueil.vue';
 import IconMessage from '@/components/icons/IconMessage.vue';
 import IconProfil from '@/components/icons/IconProfil.vue';
 import IconLoc from '@/components/icons/IconLoc.vue';
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <footer class="absolute bottom-0 w-screen">
+    <footer class="fixed bottom-0 w-screen z-10">
         <nav class="bg-white py-4 drop-shadow-3xl">
             <div>
                 <ul class="grid grid-cols-5 items-center justify-items-center ">
@@ -23,5 +23,4 @@ import { RouterLink, RouterView } from 'vue-router';
 
     
 </footer>
-     <RouterView />
 </template>

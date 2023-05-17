@@ -3,7 +3,7 @@
   <div class="w-[350px] h-[123px] absolute left-[-1px] top-[3px] rounded-[20px] bg-[#050000]/[0.28]"> </div>
 <div class="w-[350px] h-[123px] absolute left-[-1px] top-[-1px] rounded-[20px] bg-white"></div>
   <img
-    src="../images/Imagedefis1.png"
+    src="/images/Imagedefis1.png"
     class="w-[350px] h-[67px] absolute left-[-1px] top-[-1px] rounded-tl-[20px] rounded-tr-[20px] object-cover"
   />
 <div

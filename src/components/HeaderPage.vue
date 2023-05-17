@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconNotificationVue from '@/components/icons/IconNotification.vue';
+import IconNotificationVue from '@/components/icons/IconNoti.vue';
 import IconParametreVue from '@/components/icons/IconParametre.vue';
 </script>
 
