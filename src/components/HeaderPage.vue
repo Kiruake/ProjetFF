@@ -29,7 +29,7 @@ function closeMenu() {
           <VectorVioletMenuVue class="absolute top-14"/>
            <VectorBleuMenu class="absolute bottom-12"/>
             
-    		      <ul class=" flex-col justify-start pt-40 items-center text-xl">
+    		      <ul class=" flex-col justify-start pt-40 items-center text-3xl">
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Confidentialité</RouterLink></li>
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Compte</RouterLink></li>
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">A Propos</RouterLink></li>
