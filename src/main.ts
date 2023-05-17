@@ -10,7 +10,7 @@ const app = createApp(App)
 app.use(
   createRouter({
     history: createWebHistory(),
-    routes
+    routes 
   })
 )
 

@@ -8,15 +8,15 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-    <footer class="mt-6">
+    <footer class="absolute bottom-0 w-screen">
         <nav class="bg-white py-4 drop-shadow-3xl">
             <div>
                 <ul class="grid grid-cols-5 items-center justify-items-center ">
-                    <li><RouterLink to="/index"><IconAccueil/></RouterLink></li>
-                    <li><RouterLink to="/Defis"><IconDefis/></RouterLink></li>
-                    <li><RouterLink to="/Map"><IconLoc/></RouterLink></li>
-                    <li><RouterLink to="/Messages"><IconMessage/></RouterLink></li>
-                    <li><RouterLink to="/Profil"><IconProfil/></RouterLink></li>
+                    <li><RouterLink :to="{name:'index'}"><IconAccueil/></RouterLink></li>
+                    <li><RouterLink to="/defis"><IconDefis/></RouterLink></li>
+                    <li><RouterLink to="/map"><IconLoc/></RouterLink></li>
+                    <li><RouterLink to="/messages"><IconMessage/></RouterLink></li>
+                    <li><RouterLink to="/profil"><IconProfil/></RouterLink></li>
                 </ul>
             </div>
         </nav>
