@@ -24,12 +24,12 @@ h2 {
 body {
 @apply bg-blue-500;
 }
-  
+
 @layer components {
   .grille {
     @apply px-6 lg:grid lg:grid-cols-principal lg:justify-center lg:gap-12;
   }
   .menu-link {
-    @apply block px-5 py-4;
+    @apply block pl-16 py-4;
   }
 }

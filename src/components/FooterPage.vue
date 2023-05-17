@@ -20,7 +20,7 @@ function closeMenu() {
         <nav class="bg-white py-1 drop-shadow-3xl ">
             <div>
                 <ul class="grid grid-cols-5 items-center justify-items-center ">
-                    <li><RouterLink class="menu-link" to="/" @click="closeMenu"><IconAccueil/></RouterLink></li>
+                    <li><RouterLink to="/" @click="closeMenu"><IconAccueil/></RouterLink></li>
                     <li><RouterLink to="/defis" @click="closeMenu"><IconDefis/></RouterLink></li>
                     <li><RouterLink to="/map" @click="closeMenu"><IconLoc/></RouterLink></li>
                     <li><RouterLink to="/messages" @click="closeMenu"><IconMessage/></RouterLink></li>
