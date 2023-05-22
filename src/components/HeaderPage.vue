@@ -34,7 +34,7 @@ function closeMenu() {
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Compte</RouterLink></li>
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">A Propos</RouterLink></li>
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Contact</RouterLink></li>
-    		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Premium</RouterLink></li>
+    		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Premium</RouterLink></li> 
     		      </ul>
     		    </nav>
         </div>
