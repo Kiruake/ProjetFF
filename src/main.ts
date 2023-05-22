@@ -6,6 +6,7 @@ import V3ScrollLock from 'v3-scroll-lock'
 
 import './assets/css/style.css'
 
+
 const app = createApp(App)
 
 app.use(
