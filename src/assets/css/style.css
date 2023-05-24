@@ -22,7 +22,7 @@ h2 {
 }
 
 body {
-@apply bg-blue-500;
+  @apply bg-gradient-to-b from-tahiti-100 to-tahiti-200;
 }
 
 @layer components {

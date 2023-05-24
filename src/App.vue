@@ -1,11 +1,11 @@
 <template>
-<div v-if="currentUser" class="mt-24 ">
+    <div v-if="currentUser" class="mt-24 ">
 
         <h1>Welcome {{ currentUser?.name }}</h1>
 
-        <div>
+        <div class="flex flex-col justify-center items-center mt-10">
             <button type="button" @click="doLogout"
-             class="flex justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">LogOut</button>
+             class="flex justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">LogOut</button>
         </div>
 
          </div>
@@ -27,7 +27,7 @@
                             class="flex justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Se connecter</button>
             
                     <button type="button" @click="loginMode=false"
-                            class="flex justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">S'inscrire</button>
+                            class="flex justify-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">S'inscrire</button>
        
         </div>
 
@@ -40,7 +40,7 @@
 
                 <div class="flex justify-center space-x-10 mt-14">
                 <button type="button" @click="doCreateAccount"
-                     class="flex justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Créer</button>
+                     class="flex justify-center rounded-md bg-white px-4     py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Créer</button>
             
                  <button type="button" @click="loginMode = true"
                  class="flex justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Retour</button>
@@ -62,8 +62,6 @@
 
 </template>
 
-
-
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import FooterPage from "./components/Footerpage.vue"
@@ -72,6 +70,11 @@ import PocketBase from 'pocketbase';
 import { onMounted, ref } from 'vue';
 import LogoIzymate from "./components/icons/LogoIzymate.vue";
 
+var pocketbase_ip=''
+if (import.meta.env.MODE === 'production')
+pocketbase_ip='http://193.168.146.10:80'
+else pocketbase_ip='http://127.0.0.1:8090'
+alert (pocketbase_ip)
 
 
 let pb = null;

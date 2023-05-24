@@ -2,6 +2,10 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
+
+    "useUnknownInCatchVariables": false,
+    "preserveValueImports": false,
+    "importsNotUsedAsValues": "remove",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
