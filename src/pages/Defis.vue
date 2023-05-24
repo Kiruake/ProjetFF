@@ -4,6 +4,7 @@ import CardDefis from '@/components/Cards/CardDefis.vue';
 import CardDefis2 from '@/components/Cards/CardDefis2.vue';
 import CardDefis3 from '@/components/Cards/CardDefis3.vue';
 import TacheViolette from '@/components/icons/TacheViolette.vue';
+import Footerpage from '@/components/Footerpage.vue';
 
 </script>
 
@@ -19,5 +20,7 @@ import TacheViolette from '@/components/icons/TacheViolette.vue';
         </div>
 
     <h2 class="text-center text-white mt-6">Classement</h2>
+
+    <Footerpage/>
 
 </template>
