@@ -28,7 +28,9 @@ import { RouterLink, RouterView } from 'vue-router'
 import PocketBase from 'pocketbase';
 import { onMounted, ref } from 'vue';
 import LogoIzymate from '@/components/icons/LogoIzymate.vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 
 var pocketbase_ip = ''
 if (import.meta.env.MODE === 'production')
@@ -37,7 +39,7 @@ else pocketbase_ip = 'http://127.0.0.1:8090'
 alert(pocketbase_ip)
 
 
-let pb = null;
+let pb: PocketBase | null = null;
 const currentUser = ref();
 const username = ref("");
 

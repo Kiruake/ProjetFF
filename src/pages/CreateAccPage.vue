@@ -1,5 +1,5 @@
 <template>
-<RouterView></RouterView>
+
         <div class="flex justify-center mt-32 mb-20">
             <LogoIzymate />
         </div>
@@ -25,16 +25,14 @@
 
                 <button type="button" @click="doCreateAccount"
                     class="flex justify-center rounded-md bg-white px-4     py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Créer</button>
-        <div>
+       
            <button type="button" @click="$router.back()" 
                     class="flex justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Retour
                 </button>
-        </div>
+        
 
     </div>
       
-
-        <a href="#" class="text-gray-100 underline flex justify-center mt-10">Mot de passe oublié ?</a>
 
 </template>
 
@@ -75,10 +73,8 @@ const doLogin = async () => {
     try {
         const authData = await pb.collection('users')
             .authWithPassword(username.value, password.value);
+             pb.authStore.isValid && router.replace("/index")
 
-        console.log(pb.authStore.isValid);
-        console.log(pb.authStore.token);
-        console.log(pb.authStore.model);
 
     } catch (error) {
         alert(error.message)
