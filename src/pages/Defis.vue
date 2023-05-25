@@ -5,10 +5,13 @@ import CardDefis2 from '@/components/Cards/CardDefis2.vue';
 import CardDefis3 from '@/components/Cards/CardDefis3.vue';
 import TacheViolette from '@/components/icons/TacheViolette.vue';
 import Footerpage from '@/components/Footerpage.vue';
+import HeaderPage from '@/components/HeaderPage.vue';
 
 </script>
 
 <template>
+    <HeaderPage/>
+
     <h2 class="top-24 text-center">Izy Challenges</h2>
     <TacheViolette class="absolute z-0 top-0"/>
     <h3 class="text-white pl-6 mt-52">défis(3)</h3>

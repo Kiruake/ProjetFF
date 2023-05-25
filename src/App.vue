@@ -1,7 +1,5 @@
 <template>
    
-<HeaderPage/>
-
 <main class="mb-32">
     <RouterView/>
 </main>
@@ -13,7 +11,6 @@
 <script setup lang="ts">
 
 import { RouterView } from 'vue-router'
-import HeaderPage from "./components/HeaderPage.vue"
 import PocketBase from 'pocketbase';
 
 

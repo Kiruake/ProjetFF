@@ -1,17 +1,17 @@
 <template>
 
-        <div class="flex justify-center mt-32 mb-20">
+        <div class="flex justify-center mt-32 mb-20 pt-14">
             <LogoIzymate/>
         </div>
 
 
         <div class=" flex flex-col justify-center items-center mt-10 ">
 
-            <input v-model="username" id="username" name="username" type="text" autocomplete="none" placeholder="username"
+            <input v-model="username" id="username" name="username" type="text" autocomplete="none" placeholder="Email.."
                     required class=" w-72 mt-2 px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
             <input v-model="password" id="password" name="password" type="password" autocomplete="none"
-                placeholder="Mot de passe" required class=" w-72 mt-4 px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                placeholder="Mot de passe.." required class=" w-72 mt-4 px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
 
         <div class="flex justify-center space-x-16 mt-16">
@@ -27,10 +27,11 @@
             </button>
 
         </div>
-
-    <button type="button" @click="$router.push('/Password')"
-      class="text-gray-100 underline flex justify-center mt-10">Mot de passe oublié ? 
-    </button>
+        <div class="flex justify-center">
+            <button type="button" @click="$router.push('/Password')"
+                class="text-gray-100 underline mt-10 ">Mot de passe oublié ? 
+            </button>
+        </div>
 
 </template>
 
