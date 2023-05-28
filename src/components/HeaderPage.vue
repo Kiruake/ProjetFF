@@ -48,6 +48,9 @@ const doLogout = () => {
         </div>
 
         <div class="flex items-center gap-4">
+
+
+          
           
          	  <nav class="invisible opacity-0 z-10 fixed inset-0 h-screen w-screen bg-white text-2xl text-white transition-all duration-300 ease-in-out"
             :class="{ '!visible opacity-100': activeMenu }" >
@@ -69,7 +72,11 @@ const doLogout = () => {
               </li>
     		      </ul>
     		    </nav>
+
         </div>
     
+
+
+        
       </header>
 </template>

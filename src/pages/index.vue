@@ -3,7 +3,7 @@
 
         <TacheViolette class="absolute top-0"/>
 
-     <h2 class="text-white text-center mt-64">Bienvenu {{ currentUser?.name }}</h2> 
+     <h2 class="text-white text-center mt-64">Bienvenue {{ currentUser?.name }}</h2> 
 
     <h2 class="text-white text-center mt-16">Evenements à venir</h2>
 
@@ -11,6 +11,9 @@
         <CardEvent v-for="event in events" v-bind="event" :key="event.id"/>
     
     </div>
+            <div class="flex justify-center mt-16">
+          <RouterLink to="/CreationEvents"> <BoutonPlus1/></RouterLink>
+            </div>
 
     <RouterView/>
 
@@ -27,6 +30,7 @@
     import TacheViolette from '@/components/icons/TacheViolette.vue';
     import Footerpage from '@/components/Footerpage.vue';
     import HeaderPage from '@/components/HeaderPage.vue';
+    import BoutonPlus1 from '@/components/Boutons/BoutonPlus1.vue';
     import { useRouter,} from 'vue-router';
     import { events } from "@/Data"
         

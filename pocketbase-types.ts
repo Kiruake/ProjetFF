@@ -4,6 +4,7 @@
 
 export enum Collections {
 	Users = "users",
+	Event = "events",
 }
 
 // Alias types for improved usability
@@ -30,20 +31,33 @@ export type AuthSystemFields<T = never> = {
 
 // Record types for each collection
 
+export type EventsRecord = {
+	nom_event: string
+	lieu_event: string
+	membre_actuel?: number
+	membre_max?: number
+	prive:boolean
+	football:boolean
+}
+
+
 export type UsersRecord = {
 	name?: string
 	avatar?: string
 }
 
 // Response types include system fields and match responses from the PocketBase API
+export type EventsResponse<Texpand = unknown> = Required<EventsRecord> & BaseSystemFields<Texpand>
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
+	event: EventsRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
+	event: EventsRecord
 	users: UsersResponse
 }

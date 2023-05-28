@@ -13,6 +13,7 @@ import MapVue from './pages/Map.vue'
 import MessagesVue from './pages/Messages.vue'
 import ProfilVue from './pages/Profil.vue'
 import indexVue from './pages/index.vue'
+import CreationEventsVue from './pages/CreationEvents.vue'
 
 
 
@@ -29,8 +30,12 @@ const router =  createRouter({
       {path : "/map", component : MapVue },
       {path : "/messages", component : MessagesVue },
       {path : "/profil", component : ProfilVue },
+       {path : "/creationsevents", component : CreationEventsVue },
+
     ]
   })
+
+export default router
 
 const app = createApp(App)
 app.use(router).mount("#app")
