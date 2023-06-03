@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-16 h-[670px]" id="map"></div>
+    <div class="mt-16 h-[600px]" id="map"></div>
 </template>
 
 <script lang="ts">

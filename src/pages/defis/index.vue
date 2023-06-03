@@ -4,6 +4,10 @@ import type { DefisResponse } from '@/pocketbase-types';
 import { ref, onMounted } from "vue";
 import CardDefis from '@/components/Cards/CardDefis.vue'
 import { getAllDefis } from '@/backend';
+import HeaderPage from '@/components/HeaderPage.vue';
+import Footerpage from '@/components/Footerpage.vue';
+import TacheViolette from '@/components/icons/TacheViolette.vue';
+
 const allDefis = ref<DefisResponse[]>([]);
 onMounted(async () => {
 
@@ -14,7 +18,21 @@ onMounted(async () => {
 </script>
 
 <template>
-    <h1 class="uppercase text-center text-4xl mt-24 mb-16 lg:mb-2">Defis</h1>
+    <HeaderPage/>
+
+        <h2 class="top-24 text-center">Izy Challenges</h2>
+        <TacheViolette class="absolute z-0 top-0"/>
+        <h3 class="text-white pl-6 mt-52">défis</h3>
+
+
+          <div class=" flex flex-col justify-center items-center gap-8 mt-4">
+            <CardDefis v-for="unDefis in allDefis" v-bind="{ ...unDefis }" />
+
+        </div>
+
+        <h2 class="text-center text-white mt-6">Classement</h2>
+
+        <Footerpage/>
 
     <div class=" flex flex-col justify-center items-center gap-8 mt-4">
         <CardDefis v-for="unDefis in allDefis" v-bind="{ ...unDefis }" />
