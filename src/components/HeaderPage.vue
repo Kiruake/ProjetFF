@@ -7,6 +7,7 @@ import VectorVioletMenuVue from './icons/VectorVioletMenu.vue';
 import { useRouter, } from 'vue-router';
 import { onMounted, ref } from 'vue';
 import PocketBase from 'pocketbase';
+import { pb } from '@/backend'
 import {computed, watch } from 'vue';
 
 
@@ -16,13 +17,13 @@ function closeMenu() {
     activeMenu.value = false
 }
 
-let pb = null;
+
 const currentUser = ref();
 const router = useRouter();
 
 
 onMounted(async () => {
-  pb = new PocketBase('http://127.0.0.1:8090');
+
   !pb.authStore.isValid && router.replace("/LoginPage")
   currentUser.value = pb.authStore.isValid ? pb.authStore.model : null;
 
