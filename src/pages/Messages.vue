@@ -1,6 +1,11 @@
 <template>
     <HeaderPage/>
 
+    <div class="flex mt-24 justify-center gap-20 font-semibold text-white">
+        <p class="underline underline-offset-8">Amis</p>
+       <RouterLink to="/messagesgroupes"><p>Groupe</p></RouterLink>
+    </div>
+
 <CardMessagesVue/>
     
 <Footerpage/>

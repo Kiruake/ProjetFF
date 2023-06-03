@@ -6,10 +6,10 @@ import SearchBar1 from '../SearchBar1.vue';
 
 <template>
 
-<h3 class="mt-28 ml-8 mb-4 text-white">Messages</h3>
+<h3 class="mt-10 ml-8 mb-7 text-white">Messages</h3>
 <div class="flex justify-center ">
 
-    <div class="w-[328px] h-[551.08px] flex rounded-[20px] bg-white border border-black"
+    <div class="w-[328px] h-[500px] mb-10 flex rounded-[20px] bg-white border border-black"
         style="box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);">
 
         <div class="flex-cols items-start pt-8">
