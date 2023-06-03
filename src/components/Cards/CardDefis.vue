@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
 import type { DefisResponse, IsoDateString, RecordIdString } from '@/pocketbase-types'
+import IconTrophy from '../icons/IconTrophy.vue'
 
 
 const props = defineProps<{
@@ -24,16 +25,27 @@ const url = `/defis/${props.id}`
 
 <template>
 
-<div class="w-[350px] h-[127px] relative">
+<div class="w-[350px] h-[127px] rounded-md bg-white relative">
 
-      <img class="m-auto w-[350px] h-[67px] absolute left-[-1px] top-[-1px] rounded-tl-[20px] rounded-tr-[20px] object-cover " :src="urlImgDefis">
+    <img class="m-auto w-[350px] h-[67px]  rounded-tl-md rounded-tr-mdobject-cover " :src="urlImgDefis">
 
-      <p class="absolute left-[59px] top-[22px] text-xl font-semibold text-center text-white">
+    <p class=" text-xl font-semibold text-center text-white">
       C’est moi le champion</p>
 
-      <p class="w-[21px] absolute left-[263px] top-[85px] text-base text-left text-black">{{ nombre }}</p>
-      <p class="w-[33.37px] text-base text-center text-black">{{date}}</p>
-      <p class="w-5 absolute left-28 top-[85px] text-base text-left text-black">{{ points }}</p>
+    <div class="flex gap-8">
+
+        <p class=" text-base text-center text-black">{{ date }}</p>
+
+        <div class="flex gap-1">
+          <div class="pt-1"><IconTrophy/></div> 
+          <p class=" text-base text-left text-black">{{ points }}</p>
+        </div>
+
+        <p class="text-base text-left text-black">{{ nombre }}</p>
+    
+    </div>
+
+  </div>
 
   <RouterLink
                       :to="{
@@ -50,6 +62,5 @@ const url = `/defis/${props.id}`
                      </RouterLink>
 
 
-</div>
 
 </template>

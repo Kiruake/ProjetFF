@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-import SearchBar1 from '../SearchBar1.vue';
 
 </script>
 

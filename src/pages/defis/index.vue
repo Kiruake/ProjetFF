@@ -31,16 +31,21 @@ onMounted(async () => {
 
         </div>
 
-        <h2 class="text-center text-white mt-6">Classement</h2>
-
-
     <div class=" flex flex-col justify-center items-center gap-8 mt-4">
         <CardDefis v-for="unDefis in allDefis" v-bind="{ ...unDefis }" />
 
     </div>
 
-    <div class="flex justify-center">
-    <ClassementTemplate/>
+          <h2 class="text-center text-white mb-10">Classement</h2>
+
+      <div class="flex justify-center">
+        <ClassementTemplate/>
+        </div>
+
+    <div class="flex justify-center m-auto w-[328px] h-[300px] mb-10 rounded-[20px] bg-white border border-black">
+        <div class="flex-col">
+
+        </div>
     </div>
 
     
