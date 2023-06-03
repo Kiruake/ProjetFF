@@ -8,7 +8,7 @@ else
 alert (pocketbase_ip)
 
 export const pb = new Pocketbase(pocketbase_ip) ;
-import { type EventsResponse,type EventsRecord, Collections, } from '@/pocketbase-types'
+import { type EventsResponse,type EventsRecord, type DefisResponse, Collections, } from '@/pocketbase-types'
 
 
     export async function allEvents() {
@@ -24,9 +24,22 @@ export async function getAllEvents() {
     });
 } 
 
+export async function getAllDefis() {
+    return await pb.collection('defis').getFullList<DefisResponse>({
+      sort: 'created'
+    });
+} 
+
+
 export async function oneIDEvent(id: string) {
   return await pb.collection(Collections.Events).getOne<EventsResponse>(id)
 }
+
+
+export async function oneIDDefis(id: string) {
+  return await pb.collection(Collections.Defis).getOne<DefisResponse>(id)
+}
+
 
 export async function createEvent(eventData: EventsRecord) {
   try {

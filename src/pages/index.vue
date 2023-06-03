@@ -24,11 +24,11 @@
     <script setup lang="ts">
     import { RouterLink, RouterView, routerKey } from 'vue-router'
     import PocketBase from 'pocketbase';
+    import {pb} from '@/backend'
     import { onMounted, ref } from 'vue';
     import CardEvent from '@/components/Cards/CardEvent.vue';
     import { allEvents } from '@/backend';
     const EventsListe = await allEvents();
-
     import TacheViolette from '@/components/icons/TacheViolette.vue';
     import Footerpage from '@/components/Footerpage.vue';
     import HeaderPage from '@/components/HeaderPage.vue';
@@ -36,22 +36,14 @@
     import { useRouter,} from 'vue-router';
 
         
-    
-
-    var pocketbase_ip = ''
-    if (import.meta.env.MODE === 'production')
-        pocketbase_ip = 'http://193.168.146.10:80'
-    else pocketbase_ip = 'http://127.0.0.1:8090'
-    alert(pocketbase_ip)
 
 
-    let pb = null;
     const currentUser = ref();
     const router = useRouter ();
 
 
     onMounted(async () => {
-        pb = new PocketBase('http://127.0.0.1:8090');
+   
          !pb.authStore.isValid && router.replace("/LoginPage")
          currentUser.value = pb.authStore.isValid ? pb.authStore.model : null;
       
