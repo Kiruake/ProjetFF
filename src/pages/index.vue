@@ -8,8 +8,7 @@
     <h2 class="text-white text-center mt-16">Evenements à venir</h2>
 
  
-        <CardEvent v-for="unEvent of EventsListe" v-bind="{ ...unEvent }"/>
-    
+        
     
             <div class="flex justify-center mt-16">
           <RouterLink to="/CreationEvents"> <BoutonPlus1/></RouterLink>

@@ -7,6 +7,7 @@ import { getAllDefis } from '@/backend';
 import HeaderPage from '@/components/HeaderPage.vue';
 import Footerpage from '@/components/Footerpage.vue';
 import TacheViolette from '@/components/icons/TacheViolette.vue';
+import ClassementTemplate from '@/components/Cards/ClassementTemplate.vue';
 
 const allDefis = ref<DefisResponse[]>([]);
 onMounted(async () => {
@@ -32,10 +33,19 @@ onMounted(async () => {
 
         <h2 class="text-center text-white mt-6">Classement</h2>
 
-        <Footerpage/>
 
     <div class=" flex flex-col justify-center items-center gap-8 mt-4">
         <CardDefis v-for="unDefis in allDefis" v-bind="{ ...unDefis }" />
 
     </div>
+
+    <div class="flex justify-center">
+    <ClassementTemplate/>
+    </div>
+
+    
+
+
+     <Footerpage/>
+
 </template>

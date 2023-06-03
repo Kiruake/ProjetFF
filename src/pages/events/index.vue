@@ -7,6 +7,7 @@ import CardEvent from '@/components/Cards/CardEvent.vue'
 import { getAllEvents } from '@/backend';
 import Footerpage from '@/components/Footerpage.vue';
 import HeaderPage from '@/components/HeaderPage.vue';
+
 const allEvents = ref<EventsResponse[]>([]);
 onMounted(async () => {
    
@@ -26,6 +27,7 @@ onMounted(async () => {
             <CardEvent v-for="unEvent in allEvents" v-bind="{...unEvent}"/>
     
         </div>
+
 
 <Footerpage/>
 
