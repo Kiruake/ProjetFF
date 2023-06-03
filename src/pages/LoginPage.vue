@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import PocketBase from 'pocketbase';
+import {pb} from '@/backend'
 import { onMounted, ref } from 'vue';
 import LogoIzymate from '@/components/icons/LogoIzymate.vue';
 import { useRouter } from 'vue-router';
@@ -44,21 +44,12 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 
-var pocketbase_ip = ''
-if (import.meta.env.MODE === 'production')
-    pocketbase_ip = 'http://193.168.146.10:80'
-else pocketbase_ip = 'http://127.0.0.1:8090'
-alert(pocketbase_ip)
-
-
-let pb = null;
 const currentUser = ref();
 const username = ref("");
 const password = ref("");
 
 
 onMounted(async () => {
-    pb = new PocketBase('http://127.0.0.1:8090');
 
     pb.authStore.onChange(() => {
         currentUser.value = pb.authStore.model
@@ -70,8 +61,7 @@ const doLogin = async () => {
     try {
         const authData = await pb.collection('users')
             .authWithPassword(username.value, password.value);
-            pb.authStore.isValid && router.replace("/index")
-
+            pb.authStore.isValid && router.replace("/")
     
     } catch (error) {
         alert(error.message)

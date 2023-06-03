@@ -16,6 +16,7 @@ import HeaderPage from '@/components/HeaderPage.vue';
     <TacheViolette class="absolute z-0 top-0"/>
     <h3 class="text-white pl-6 mt-52">défis(3)</h3>
 
+
         <div class=" flex flex-col justify-center items-center gap-8 mt-10">
         <CardDefis/> 
         <CardDefis2/>
