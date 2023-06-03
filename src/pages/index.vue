@@ -7,15 +7,15 @@
 
     <h2 class="text-white text-center mt-16">Evenements à venir</h2>
 
-    <div class=" flex flex-col justify-center items-center gap-8 mt-4">
-        <CardEvent v-for="event in events" v-bind="event" :key="event.id"/>
+ 
+        <CardEvent v-for="unEvent of EventsListe" v-bind="{ ...unEvent }"/>
     
-    </div>
+    
             <div class="flex justify-center mt-16">
           <RouterLink to="/CreationEvents"> <BoutonPlus1/></RouterLink>
             </div>
 
-    <RouterView/>
+    <RouterView/>   
 
     <Footerpage/>
        
@@ -26,13 +26,15 @@
     import PocketBase from 'pocketbase';
     import { onMounted, ref } from 'vue';
     import CardEvent from '@/components/Cards/CardEvent.vue';
+    import { allEvents } from '@/backend';
+    const EventsListe = await allEvents();
 
     import TacheViolette from '@/components/icons/TacheViolette.vue';
     import Footerpage from '@/components/Footerpage.vue';
     import HeaderPage from '@/components/HeaderPage.vue';
     import BoutonPlus1 from '@/components/Boutons/BoutonPlus1.vue';
     import { useRouter,} from 'vue-router';
-    import { events } from "@/Data"
+
         
     
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+
 import CardDefis from '@/components/Cards/CardDefis.vue';
 import CardDefis2 from '@/components/Cards/CardDefis2.vue';
 import CardDefis3 from '@/components/Cards/CardDefis3.vue';

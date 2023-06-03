@@ -51,6 +51,7 @@ export type EventsRecord = {
 	membre_actuel?: number
 	prive?: boolean
 	membre_max?: number
+	description?: string
 }
 
 export type UsersRecord = {

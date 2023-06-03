@@ -1,7 +1,10 @@
 <template>
    
-<main class="mb-32">
+<main>
+
+    <Suspense>
     <RouterView/>
+    </Suspense>
 </main>
 
 
