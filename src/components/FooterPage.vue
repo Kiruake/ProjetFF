@@ -16,7 +16,7 @@ function closeMenu() {
 </script>
 
 <template>
-    <footer class="fixed bottom-0 w-screen z-10">
+    <footer class="absolute bottom-0 w-screen z-10">
         <nav class="bg-white py-1 drop-shadow-3xl ">
             <div>
                 <ul class="grid grid-cols-5 items-center justify-items-center ">
