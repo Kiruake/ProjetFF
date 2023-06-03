@@ -3,7 +3,7 @@
 import { pb } from '@/backend'
 import { oneIDEvent } from '@/backend'
 
-const props = defineProps<{ id :string }>();
+const props = defineProps<{ id: string }>();
 console.log(props.id);
 
 const unEvent = await oneIDEvent(props.id)

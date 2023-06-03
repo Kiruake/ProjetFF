@@ -8,19 +8,34 @@ else
 alert (pocketbase_ip)
 
 export const pb = new Pocketbase(pocketbase_ip) ;
-import { type EventsResponse,type DefisResponse, Collections, } from '@/pocketbase-types'
+import { type EventsResponse,type EventsRecord, Collections, } from '@/pocketbase-types'
 
-
-export async function getallEvents() {
-    const events = await pb.collection('events').getFullList<EventsResponse>();
-    return events}
 
     export async function allEvents() {
     const listeEvents = await pb.collection("events").getFullList<EventsResponse>() ;
     return listeEvents;
+
 }
+
+
+export async function getAllEvents() {
+    return await pb.collection('events').getFullList<EventsResponse>({
+      sort: 'created'
+    });
+} 
 
 export async function oneIDEvent(id: string) {
   return await pb.collection(Collections.Events).getOne<EventsResponse>(id)
+}
+
+export async function createEvent(eventData: EventsRecord) {
+  try {
+    const response = await pb.collection('events').create(eventData);
+    console.log('Événement à été créé avec succès', response);
+    return response;
+  } catch (error) {
+    console.error('Erreur lors de la création', error);
+    throw error;
+  }
 }
 

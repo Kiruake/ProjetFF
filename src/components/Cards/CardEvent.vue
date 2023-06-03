@@ -6,14 +6,14 @@
 // const urlImgEvent = props.image ? pb.getFileUrl(props, props.image, { thumb: '100x250' }) : '/image-not-found.png'
 // console.log(urlImgEvent)
 
-
+// const url = `/events/${props.id}`
 </script>
 
 <template>
 
-<!-- 
+
   
-    <div class="w-[329px] h-[86px] relative mt-6 z-0">
+    <!-- <div class="w-[329px] h-[86px] relative mt-6 z-0">
       <div class="w-[328px] h-20 absolute left-0 top-px rounded-xl bg-black/[0.35]"></div>
       <div class="w-[328px] h-20 absolute left-[-1px] top-[-1px] rounded-xl bg-white"></div>
       <p class="relative text-2xl font-semibold text-center text-black">{{ nom_event }}</p>
