@@ -1,55 +1,85 @@
+
+
 <template>
     <div class="mt-16 h-[600px]" id="map"></div>
 </template>
 
-<script lang="ts">
-import { ref, onMounted } from 'vue';
-
-export default {
-    setup() {
-        const map = ref(null);
-
-        onMounted(() => {
-            const google = window.google;
-            const mapOptions = {
-                center: { lat: 47.510356, lng: 6.798466 }, 
-                zoom: 12, 
-            };
-            map.value = new google.maps.Map(document.getElementById('map'), mapOptions);
-        });
-
-        return {
-            map,
-        };
-    },
-};
-
-
-function initMap(): void {
-  const myLatLng = { lat: -25.363, lng: 131.044 };
-
-  const map = new google.maps.Map(
-    document.getElementById("map") as HTMLElement,
-    {
-      zoom: 4,
-      center: myLatLng,
-    }
-  );
-
-  new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "Hello World!",
-  });
-}
+<script setup lang="ts">
+import { onMounted } from 'vue';
 
 declare global {
-  interface Window {
-    initMap: () => void;
-  }
+    interface Window {
+        google: any;
+        initMap: () => void;
+    }
 }
-window.initMap = initMap;
-export {};
+
+function initMap(): void {
+    const uluru = { lat: 47.510356, lng: 6.798466 };
+
+    const map = new window.google.maps.Map(
+        document.getElementById("map") as HTMLElement,
+        {
+            zoom: 12,
+            center: uluru,
+        }
+    );
+
+    
+
+    const contentString =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 class="text-2xl text-center underline pb-2">Arena</h1>' +
+        '<div id="bodyContent">' +
+        '<p class="text-lg"><b>Lieu</b>,: Montbéliard' +
+        '<p class="text-lg"><b>Date</b>: 24/06' +
+        '<p class="text-lg"><b>Sport</b>: Football' +
+        '<p class="text-lg pb-2"><b>Membres</b>: 6/10'  +
+        '<a class="font-semibold mt-2 flex justify center pl-7 border-md text-lg  border-2 " href="/events/356ki36p1zmcslp">Rejoindre <a> ' +
+        "</div>" 
+        "</div>";
+
+    const infowindow = new window.google.maps.InfoWindow({
+        content: contentString,
+        ariaLabel: "Uluru",
+    });
+
+    const marker = new window.google.maps.Marker({
+        position: uluru,
+        map,
+        title: "Uluru (Ayers Rock)",
+    });
+
+    marker.addListener("click", () => {
+        infowindow.open({
+            anchor: marker,
+            map,
+        });
+    });
+}
+
+onMounted(() => {
+    if (window.google) {
+        initMap();
+    } else {
+        const script = document.createElement('script');
+        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDPwVIFcSXJl6aPuZTxl_juBsZqsefjQho&callback=initMap';
+        script.defer = true;
+        script.async = true;
+        script.onerror = () => {
+            console.error('Erreur lors du chargement de l\'API Google Maps.');
+        };
+        document.head.appendChild(script);
+    }
+});
+
+
+
 
 </script>
+
+
+
 
