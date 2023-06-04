@@ -25,11 +25,14 @@
 
             <div class=" w-72 border mt-4 ml-4 flex"></div>
                   
+    <RouterLink to="/tchatprive">
+
             <div class="grid grid-cols-3 items-start pt-4 -mb-4">
                 <img class="pl-6"  src="/images/PP2.png"/>
                 <p class="  pt-2 text-xs font-semibold  text-black">Username </p>
                 <p class=" pt-2 text-[10px] text-center text-[#828282]">3h </p>
             </div>
+    </RouterLink>
 
             <p class="pl-24 text-[10px] text-left text-[#828282]">lorem ipsum lorem ipsum lorem ipsu...</p>
              <div class=" w-72 border mt-4 ml-4 flex"></div>

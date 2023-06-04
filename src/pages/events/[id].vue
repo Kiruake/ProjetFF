@@ -20,6 +20,7 @@ const User1 = await oneIDUsers(unEvent.user_participation[0])
 const User2 = await oneIDUsers(unEvent.user_participation[0])
 const User3 = await oneIDUsers(unEvent.user_participation[0])
 
+
 const urlImgEvent = unEvent.image ? pb.getFileUrl(unEvent, unEvent.image, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImgEvent)
 
@@ -42,7 +43,7 @@ console.log(urlImageUser3)
 
          <img class=" mt-14 " :src="urlImgEvent">
 
-        <div class="bg-white pt-5">
+        <div class="bg-white pt-5 pb-5">
 
                     <div class="bg-tahiti-100 border-2 border-tahiti-300 rounded-md mx-28">
                     <h1 class="text-2xl text-white text-center py-2">{{ unEvent.nom_event}}</h1>
