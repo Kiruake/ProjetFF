@@ -15,6 +15,8 @@ onMounted(async () => {
     console.log(allEvents.value);
 });
 
+
+
 </script>
 
 <template>
