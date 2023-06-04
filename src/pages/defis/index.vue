@@ -3,7 +3,8 @@
 import type { DefisResponse } from '@/pocketbase-types';
 import { ref, onMounted } from "vue";
 import CardDefis from '@/components/Cards/CardDefis.vue'
-import { getAllDefis } from '@/backend';
+import { getAllDefis, } from '@/backend';
+import { oneIDDefis } from '@/backend';
 import HeaderPage from '@/components/HeaderPage.vue';
 import Footerpage from '@/components/Footerpage.vue';
 import TacheViolette from '@/components/icons/TacheViolette.vue';
@@ -15,6 +16,15 @@ onMounted(async () => {
     allDefis.value = await getAllDefis();
     console.log(allDefis.value);
 });
+
+// const props = defineProps<{ id: string }>();
+// console.log(props.id);
+
+// const unDefis = await oneIDDefis(props.id)
+// console.log(unDefis);
+
+// const points = await oneIDDefis(unDefis.points.toString())
+
 
 </script>
 
@@ -44,7 +54,7 @@ onMounted(async () => {
 
     <div class="flex justify-center m-auto w-[328px] h-[300px] mb-10 rounded-[20px] bg-white border border-black">
         <div class="flex-col">
-
+<!-- <p>{{ unDefis.points }}</p> -->
         </div>
     </div>
 

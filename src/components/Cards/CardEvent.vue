@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
 import type { EventsResponse, IsoDateString, RecordIdString } from '@/pocketbase-types'
+import { formatDate } from '@/helper'
 
 
 const props = defineProps<{

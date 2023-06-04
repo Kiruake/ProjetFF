@@ -2,6 +2,7 @@
 import { pb } from '@/backend'
 import type { DefisResponse, IsoDateString, RecordIdString } from '@/pocketbase-types'
 import IconTrophy from '../icons/IconTrophy.vue'
+import { formatDate } from '@/helper'
 
 
 const props = defineProps<{
@@ -34,7 +35,7 @@ const url = `/defis/${props.id}`
 
     <div class="flex gap-8">
 
-        <p class=" text-base text-center text-black">{{ date }}</p>
+        <p class=" text-base text-center text-black">{{formatDate (date) }}</p>
 
         <div class="flex gap-1">
           <div class="pt-1"><IconTrophy/></div> 

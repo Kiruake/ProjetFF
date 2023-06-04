@@ -11,7 +11,11 @@
         
     
             <div class="flex justify-center mt-16">
-          <RouterLink to="/CreationEvents"> <BoutonPlus1/></RouterLink>
+          <RouterLink to="/Events"> 
+
+<div class="bg-tahiti-300 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">Tout les événements </div>
+
+          </RouterLink>
             </div>
 
     <RouterView/>   
@@ -23,18 +27,17 @@
     <script setup lang="ts">
     import { RouterLink, RouterView, routerKey } from 'vue-router'
     import PocketBase from 'pocketbase';
-    import {pb} from '@/backend'
+    import { pb} from '@/backend'
     import { onMounted, ref } from 'vue';
-    import CardEvent from '@/components/Cards/CardEvent.vue';
+
     import { allEvents } from '@/backend';
     const EventsListe = await allEvents();
     import TacheViolette from '@/components/icons/TacheViolette.vue';
     import Footerpage from '@/components/Footerpage.vue';
     import HeaderPage from '@/components/HeaderPage.vue';
-    import BoutonPlus1 from '@/components/Boutons/BoutonPlus1.vue';
+
     import { useRouter,} from 'vue-router';
 
-        
 
 
     const currentUser = ref();
