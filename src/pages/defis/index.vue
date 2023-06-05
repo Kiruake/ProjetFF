@@ -9,6 +9,7 @@ import HeaderPage from '@/components/HeaderPage.vue';
 import Footerpage from '@/components/Footerpage.vue';
 import TacheViolette from '@/components/icons/TacheViolette.vue';
 import ClassementTemplate from '@/components/Cards/ClassementTemplate.vue';
+import IconTrophy from '@/components/icons/IconTrophy.vue';
 
 const allDefis = ref<DefisResponse[]>([]);
 onMounted(async () => {
@@ -53,19 +54,63 @@ onMounted(async () => {
 
            
 
-             <h2 class="text-center text-white mt-32 mb-10">Classement</h2>
+                <h2 class="text-center text-white mt-32 mb-10">Classement</h2>
           
-                <div class="lg:grid lg:grid-cols-2 pb-24 lg:pl-24 lg:grid-rows-1 items-center ">
+            <div class="lg:grid lg:grid-cols-2 pb-24 lg:pl-24 lg:grid-rows-1 items-center ">
+
                     <ClassementTemplate/>
 
                     <div class="m-auto lg:pr-14 w-[328px] lg:w-[700px] lg:h-[150px] h-[300px] mb-10 lg:mb-0 rounded-[20px] bg-white border border-black">
-              
-                    <!-- <p>{{ unDefis.points }}</p> -->
-               
+
+                        <div class="flex mt-6 space-x-6 pl-5">
+                            <p class="pt-4 text-2xl font-semibold text-tahiti-100">1</p>
+                            <img src="/images/PP1.png"/>
+                            <p class="pt-4 text-xl">Username1</p>
+
+                            <div class="text-xl flex pt-4">
+                                <p>90</p> 
+                                    <div class="pt-2 pl-2">
+                                        <IconTrophy/>
+                                    </div>
+                            </div>
+                  
+                        </div>
+
+                    <div class="flex mt-6 space-x-6 pl-5">
+                            <p class="pt-4 text-2xl font-semibold text-tahiti-100">2</p>
+                        <img src="/images/PP2.png"/>
+                        <p class="pt-4 text-xl">Username2</p>
+
+                        <div class="text-xl flex pt-4 ">
+                            <p>90</p> 
+                                <div class="pt-2 pl-2">
+                                    <IconTrophy/>
+                                </div>
+                        </div>
+                
+                    </div>
+
+                    <div class="flex mt-6 space-x-6 pl-5">
+
+                        <p class="pt-4 text-2xl font-semibold text-tahiti-100">3</p>
+                        <img src="/images/PP3.png"/>
+                        <p class="pt-4 text-xl">Username3</p>
+
+                        <div class="text-xl flex pt-4">
+
+                                <p>90</p> 
+                                <div class="pt-2 pl-2">
+                                <IconTrophy/>
+                                </div>
                     </div>
 
                 </div>
-        
+
+                  
+            </div>
+        </div>
+                        
+                   
 
      <Footerpage/>
 
