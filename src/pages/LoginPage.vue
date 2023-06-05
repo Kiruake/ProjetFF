@@ -29,7 +29,7 @@
         </div>
         <div class="flex justify-center">
             <button type="button" @click="$router.push('/Password')"
-                class="text-gray-100 underline mt-10 ">Mot de passe oublié ? 
+                class="text-gray-100 underline mt-10 mb-32 ">Mot de passe oublié ? 
             </button>
         </div>
 

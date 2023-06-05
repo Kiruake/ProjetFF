@@ -32,7 +32,14 @@ onMounted(async () => {
     <HeaderPage/>
 
         <h2 class="top-24 text-center">Izy Challenges</h2>
+
+
+
+        
+
         <TacheViolette class="lg:hidden absolute z-0 top-0"/>
+
+
         <h3 class="text-white lg:text-center lg:text-5xl pl-6 mt-52 lg:mt-16">défis</h3>
         
 

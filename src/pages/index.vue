@@ -1,7 +1,12 @@
 <template>
     <HeaderPage/>
 
-        <TacheViolette class="absolute top-0"/>
+        <div>
+            <div class="absolute top-0 mt-60 text-xl text-white">
+         <h3>Amis en ligne</h3>
+         </div>
+             <TacheViolette class="absolute top-0"/>
+         </div> 
 
      <h2 class="text-white text-center mt-64">Bienvenue {{ currentUser?.name }}</h2>
 
