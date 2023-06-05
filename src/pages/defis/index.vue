@@ -32,34 +32,33 @@ onMounted(async () => {
     <HeaderPage/>
 
         <h2 class="top-24 text-center">Izy Challenges</h2>
-        <TacheViolette class="absolute z-0 top-0"/>
-        <h3 class="text-white pl-6 mt-52">défis</h3>
+        <TacheViolette class="lg:hidden absolute z-0 top-0"/>
+        <h3 class="text-white lg:text-center lg:text-5xl pl-6 mt-52 lg:mt-16">défis</h3>
         
 
 
-          <div class=" flex flex-col justify-center items-center gap-8 mt-4">
+    
+          <div class="grid grid-col-1 lg:grid-cols-3 lg:items-center lg:justify-center gap-8 lg:mt-0 mt-4">
+            
             <CardDefis v-for="unDefis in allDefis" v-bind="{ ...unDefis }" />
 
-        </div>
+         </div>
 
+           
 
-          <h2 class="text-center text-white mt-10 mb-10">Classement</h2>
-
-
-
+             <h2 class="text-center text-white mt-32 mb-10">Classement</h2>
           
-      <div class="flex justify-center">
-        <ClassementTemplate/>
-        </div>
+                <div class="lg:grid lg:grid-cols-2 pb-24 lg:pl-24 lg:grid-rows-1 items-center ">
+                    <ClassementTemplate/>
 
-    <div class="flex justify-center m-auto w-[328px] h-[300px] mb-24 rounded-[20px] bg-white border border-black">
-        <div class="flex-col">
-<!-- <p>{{ unDefis.points }}</p> -->
-        </div>
-    </div>
+                    <div class="m-auto lg:pr-14 w-[328px] lg:w-[700px] lg:h-[150px] h-[300px] mb-10 lg:mb-0 rounded-[20px] bg-white border border-black">
+              
+                    <!-- <p>{{ unDefis.points }}</p> -->
+               
+                    </div>
 
-    
-
+                </div>
+        
 
      <Footerpage/>
 

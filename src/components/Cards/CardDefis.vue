@@ -18,14 +18,15 @@ const url = `/defis/${props.id}`
 
 <template>
 
-<div class="w-[350px] h-[127px] rounded-md bg-white relative">
 
-    <img class="m-auto w-[350px] h-[67px]  rounded-tl-md rounded-tr-mdobject-cover " :src="urlImgDefis">
+  <div class="w-[350px] h-[127px] mt-16 rounded-md bg-white m-auto relative">
+
+    <img class="m-auto w-[350px] h-[67px]  rounded-tl-md rounded-tr-md object-cover " :src="urlImgDefis">
 
     <p class=" text-xl font-semibold text-center text-white">
       C’est moi le champion</p>
 
-    <div class="flex gap-8">
+    <div class="flex pl-4 gap-28">
 
         <p class=" text-base text-center text-black">{{formatDate (date) }}</p>
 
@@ -34,11 +35,10 @@ const url = `/defis/${props.id}`
           <p class=" text-base text-left text-black">{{ points }}</p>
         </div>
 
-        <p class="text-base text-left text-black">{{ nombre }}</p>
+      
     
     </div>
 
-  </div>
 
   <RouterLink
                       :to="{
@@ -48,12 +48,13 @@ const url = `/defis/${props.id}`
                         }
                       }"
                      >
-                     <div class="bg-tahiti-300 mb-3 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">
+                     <div class="bg-tahiti-300 mt-8 border-2 border-white rounded-md text-center mx-24 text-white font-semibold  py-2  ">
                      <p class="text-center text-lg hover rounded-md">En savoir plus</p>
                      </div>
                  
                      </RouterLink>
 
 
+  </div>
 
 </template>
