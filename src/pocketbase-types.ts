@@ -47,6 +47,7 @@ export type DefisRecord = {
 	defis1?: string
 	defis2?: string
 	users_participation?: RecordIdString[]
+	description?: string
 }
 
 export type EventsRecord = {
