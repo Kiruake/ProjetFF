@@ -3,9 +3,13 @@
 
         <TacheViolette class="absolute top-0"/>
 
-     <h2 class="text-white text-center mt-64">Bienvenue {{ currentUser?.name }}</h2> 
+     <h2 class="text-white text-center mt-64">Bienvenue {{ currentUser?.name }}</h2>
+
+     {{ currentUser?.avatar }}
 
     <h2 class="text-white text-center mt-16">Evenements à venir</h2>
+
+    
 
  
         
@@ -18,7 +22,8 @@
           </RouterLink>
             </div>
 
-    <RouterView/>   
+    <RouterView/>  
+    
 
     <Footerpage/>
        
@@ -27,7 +32,7 @@
     <script setup lang="ts">
     import { RouterLink, RouterView, routerKey } from 'vue-router'
     import PocketBase from 'pocketbase';
-    import { pb} from '@/backend'
+    import { oneIDUsers, pb} from '@/backend'
     import { onMounted, ref } from 'vue';
 
     import { allEvents } from '@/backend';

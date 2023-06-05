@@ -10,7 +10,7 @@
 
   </section>
 
-  <section class="relative py-16">
+  <section class="relative pB-16">
 
     <div class="container mx-auto px-4">
 

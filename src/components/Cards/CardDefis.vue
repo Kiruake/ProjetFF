@@ -20,15 +20,20 @@ const url = `/defis/${props.id}`
 
 
   <div class="w-[350px] h-[127px] mt-16 rounded-md bg-white m-auto relative">
-
-    <img class="m-auto w-[350px] h-[67px]  rounded-tl-md rounded-tr-md object-cover " :src="urlImgDefis">
+    
+    <div>
+      <div class="absolute pl-[70px] pt-3  text-white">
+          <h3 class="border-2 border-white rounded-md px-2 py-2">{{ nom_defis }}</h3>
+      </div>
+      <img class="m-auto w-[350px] h-[67px]  rounded-tl-md rounded-tr-md object-cover " :src="urlImgDefis">
+    </div>
 
     <p class=" text-xl font-semibold text-center text-white">
       C’est moi le champion</p>
 
-    <div class="flex pl-4 gap-28">
+    <div class="flex pl-4 gap-20">
 
-        <p class=" text-base text-center text-black">{{formatDate (date) }}</p>
+        <p class=" text-base text-center text-black">Fin le : {{formatDate (date) }}</p>
 
         <div class="flex gap-1">
           <div class="pt-1"><IconTrophy/></div> 
