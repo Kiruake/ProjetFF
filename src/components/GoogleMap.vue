@@ -1,7 +1,7 @@
 
 
 <template>
-    <div class="mt-16 h-[600px]" id="map"></div>
+    <div class="mt-14 h-[690px]" id="map"></div>
 </template>
 
 <script setup lang="ts">
@@ -15,13 +15,13 @@ declare global {
 }
 
 function initMap(): void {
-    const uluru = { lat: 47.510356, lng: 6.798466 };
+    const arena = { lat: 47.510356, lng: 6.798466 };
 
     const map = new window.google.maps.Map(
         document.getElementById("map") as HTMLElement,
         {
             zoom: 12,
-            center: uluru,
+            center: arena,
         }
     );
 
@@ -47,9 +47,9 @@ function initMap(): void {
     });
 
     const marker = new window.google.maps.Marker({
-        position: uluru,
+        position: arena,
         map,
-        title: "Uluru (Ayers Rock)",
+        title: "Arena",
     });
 
     marker.addListener("click", () => {

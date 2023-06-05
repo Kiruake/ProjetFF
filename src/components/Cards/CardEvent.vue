@@ -1,32 +1,18 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
 import type { EventsResponse, IsoDateString, RecordIdString } from '@/pocketbase-types'
-import { formatDate } from '@/helper'
 
-
-const props = defineProps<{
-  id: RecordIdString
-  date?: IsoDateString
-  football?: boolean
-  image?: string
-  nom_event?: string
-  lieu_event?: string
-  membre_actuel?: number
-  prive?: boolean
-  membre_max?: number
-  description?: string
-}>()
+const props: EventsResponse = defineProps<EventsResponse>()
 
 const urlImgEvent = props.image ? pb.getFileUrl(props, props.image, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImgEvent)
 
 const url = `/events/${props.id}`
 
-
 </script>
 
-<template>
 
+<template>
 
 
 <div class="bg-white rounded-md w-[330px] ">
@@ -57,14 +43,5 @@ const url = `/events/${props.id}`
                      </div>
                  
                      </RouterLink>
-
-
-
-
-  
-
-
-  
-   
 
 </template>

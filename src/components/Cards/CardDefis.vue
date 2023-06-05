@@ -5,16 +5,8 @@ import IconTrophy from '../icons/IconTrophy.vue'
 import { formatDate } from '@/helper'
 
 
-const props = defineProps<{
-  id: RecordIdString
-  image?: string
-  date?: IsoDateString
-  nombre?: number
-  points?: number
-  nom_defis?: string
-  defis1?: string
-  defis2?: string
- }>() 
+const props: DefisResponse = defineProps<DefisResponse>()
+
 
 const urlImgDefis = props.image ? pb.getFileUrl(props, props.image, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImgDefis)
@@ -56,8 +48,8 @@ const url = `/defis/${props.id}`
                         }
                       }"
                      >
-                     <div class="border border-black hover:border-tahiti-100 rounded-md mx-24 lg:mx-9 py-4 mb-16 hover:text-white-100 hover:bg-tahiti-100">
-                     <p class="text-center text-xl hover rounded-md">En savoir plus</p>
+                     <div class="bg-tahiti-300 mb-3 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">
+                     <p class="text-center text-lg hover rounded-md">En savoir plus</p>
                      </div>
                  
                      </RouterLink>

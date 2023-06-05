@@ -17,8 +17,8 @@ const unEvent = await oneIDEvent(props.id)
 console.log(unEvent);
 
 const User1 = await oneIDUsers(unEvent.user_participation[0])
-const User2 = await oneIDUsers(unEvent.user_participation[0])
-const User3 = await oneIDUsers(unEvent.user_participation[0])
+const User2 = await oneIDUsers(unEvent.user_participation[1])
+const User3 = await oneIDUsers(unEvent.user_participation[2])
 
 
 const urlImgEvent = unEvent.image ? pb.getFileUrl(unEvent, unEvent.image, { thumb: '100x250' }) : '/image-not-found.png'
