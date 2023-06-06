@@ -53,13 +53,13 @@ const doLogout = () => {
 
           
           
-         	  <nav class="invisible opacity-0 z-10 fixed inset-0 h-screen w-screen bg-white text-2xl text-white transition-all duration-300 ease-in-out"
+         	  <nav class="invisible opacity-0 z-10 fixed inset-0 h-96 lg:ml-40 lg:w-64 w-screen bg-white text-2xl text-white transition-all duration-300 ease-in-out"
             :class="{ '!visible opacity-100': activeMenu }" >
 
-          <VectorVioletMenuVue class="absolute top-14"/>
-           <VectorBleuMenu class="absolute bottom-12"/>
+          <VectorVioletMenuVue class="absolute lg:hidden top-14"/>
+           <VectorBleuMenu class="absolute lg:hidden bottom-12"/>
             
-    		      <ul class=" flex-col justify-start pt-40 items-center text-3xl">
+    		      <ul class=" flex-col justify-start pt-40 items-center lg:pt-0 lg:text-lg text-3xl">
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Confidentialité</RouterLink></li>
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">Compte</RouterLink></li>
     		        <li><RouterLink class="menu-link text-black" to="/Confidentialite" @click="closeMenu">A Propos</RouterLink></li>
