@@ -1,9 +1,9 @@
 <template>
     <HeaderPage />
 
-      <div class="flex mt-24 justify-center gap-20 font-semibold text-white">
-           <RouterLink to="/messages"> <p>Amis</p> </RouterLink>
-            <p class="underline underline-offset-8">Groupe</p>
+      <div class="flex mt-24 lg:mt-12 lg:ml-32 justify-center gap-20 lg:text-2xl font-semibold text-white">
+           <RouterLink to="/messages"><p>Amis</p></RouterLink>
+          <p class="underline underline-offset-8">Groupe</p>
         </div>
 
     <CardMessagesVue />

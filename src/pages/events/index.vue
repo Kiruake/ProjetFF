@@ -23,9 +23,9 @@ onMounted(async () => {
 
     <HeaderPage/>
 
-    <h1 class="uppercase text-center text-white text-4xl mt-24 mb-16 lg:mb-2">Events</h1>
+    <h1 class="uppercase text-center text-white text-4xl mt-24  mb-10 lg:mb-2">Events</h1>
 
-   <div class=" flex flex-col justify-center items-center gap-8 mt-4 mb-8">
+   <div class=" grid grid-col-1 lg:grid-cols-2 justify-center items-center gap-8 mt-4 mb-8">
             <CardEvent v-for="unEvent in allEvents" v-bind="{...unEvent}"/>
     
         </div>

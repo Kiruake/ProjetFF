@@ -3,7 +3,7 @@
 
 
 
-    <div class="flex mt-24 justify-center gap-20 font-semibold text-white">
+    <div class="flex mt-24 lg:mt-12 lg:ml-32 justify-center gap-20 lg:text-2xl font-semibold text-white">
         <p class="underline underline-offset-8">Amis</p>
        <RouterLink to="/messagesgroupes"><p>Groupe</p></RouterLink>
     </div>

@@ -53,7 +53,7 @@ const url = `/defis/${props.id}`
                         }
                       }"
                      >
-                     <div class="bg-tahiti-300 mt-8 border-2 border-white rounded-md text-center mx-24 text-white font-semibold  py-2  ">
+                     <div class="bg-tahiti-200 mt-8 border-2 border-white rounded-md text-center mx-24 text-white font-semibold  py-2  ">
                      <p class="text-center text-lg hover rounded-md">En savoir plus</p>
                      </div>
                  

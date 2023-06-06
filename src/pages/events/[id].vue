@@ -16,23 +16,9 @@ console.log(props.id);
 const unEvent = await oneIDEvent(props.id)
 console.log(unEvent);
 
-const User1 = await oneIDUsers(unEvent.user_participation[0])
-const User2 = await oneIDUsers(unEvent.user_participation[1])
-const User3 = await oneIDUsers(unEvent.user_participation[2])
-
 
 const urlImgEvent = unEvent.image ? pb.getFileUrl(unEvent, unEvent.image, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImgEvent)
-
-const urlImageUser1 = User1.avatar ? pb.getFileUrl(User1, User1.avatar, { thumb: '100x250' }) : '/image-not-found.png'
-console.log(urlImageUser1)
-
-const urlImageUser2 = User2.avatar ? pb.getFileUrl(User2, User2.avatar, { thumb: '100x250' }) : '/image-not-found.png'
-console.log(urlImageUser2)
-
-const urlImageUser3 = User3.avatar ? pb.getFileUrl(User3, User3.avatar, { thumb: '100x250' }) : '/image-not-found.png'
-console.log(urlImageUser3)
-
 
 </script>
 
@@ -40,10 +26,11 @@ console.log(urlImageUser3)
 
 <HeaderPage/>
 
+<div class="lg:ml-64 lg:mt-4">
 
-         <img class=" mt-14 " :src="urlImgEvent">
+         <img class=" mt-14 lg:ml-40 lg:mt-0 w-full lg:w-2/3 " :src="urlImgEvent">
 
-        <div class="bg-white pt-5 pb-5">
+        <div class="bg-white pt-5 lg:ml-40 pb-5 lg:w-2/3">
 
                     <div class="bg-tahiti-100 border-2 border-tahiti-300 rounded-md mx-28">
                     <h1 class="text-2xl text-white text-center py-2">{{ unEvent.nom_event}}</h1>
@@ -66,26 +53,25 @@ console.log(urlImageUser3)
                         <p class="text-lg underline underline-offset-4">Membres</p>
                         </div>
 
-                        <div class="flex gap-4 pl-8 mt-4">
-                            <img class="mt-2" :src="urlImageUser1">
-                            <img class="mt-2" :src="urlImageUser2">
-                            <img class="mt-2" :src="urlImageUser3">
-                        </div>
 
         </div>
 
-  
+  <div class="lg:w-2/3 lg:ml-40">
+
         <h2 class="text-center text-white mt-8  ">description</h2>
 
                 <div class="bg-white  mx-4 rounded-md mt-6 pt-5 pr-2 pb-5 pl-3">
                     <p class="" v-html="unEvent.description"></p>     
                 </div>
 
-        <div class="flex justify-center mt-10 mb-36 ">
+        <div class="flex justify-center mt-10 mb-36 lg:mb-10 ">
     
             <div class="bg-tahiti-300 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">Rejoindre</div>
 
                 </div>
+
+    </div>
+</div>
 
 <Footerpage/>
 

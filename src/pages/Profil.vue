@@ -9,9 +9,9 @@
 
 <div class="lg:col-start-1 lg:ml-40">
 
-<h3 class="text-center text-2xl text-white mt-8 lg:mb-12 mb-8">Evénements joués (3)</h3>
+<h3 class="text-center text-2xl text-white  mt-8 mb-8">Evénements joués (3)</h3>
 
-  <div class="font-bold space-y-8 pt-4 pb-6  bg-white rounded-md lg:mx-36 mx-12">
+  <div class="font-bold space-y-8 pt-4 pb-6  bg-white rounded-md lg:mx-32 mx-12">
 
       <p class="underline underline-offset-8 text-center">Historiques</p>
 
@@ -37,9 +37,11 @@
 
   </div>
 
-  <div class="flex justify-center text-white  mb-32 space-x-7 lg:mt-8  mt-14  ">
 
-    <h2 class=" text-center mt-1 lg:mt-0 lg:ml-40 text-2xl">Mes IzyTrophies</h2>
+  <div>
+  <div class="flex justify-center text-white  mb-12 space-x-7 lg:mt-8  mt-14  ">
+
+    <h2 class=" text-center mt-1 lg:mt-0 lg:ml-40 text-2xl col-start-2 row-start-1">Mes IzyTrophies</h2>
 
     <div class="font-semibold text-2xl lg:border-none flex border-2 rounded-md px-2 py-1 lg:py-0">
         <p>90</p> 
@@ -47,8 +49,22 @@
             <IconTrophy/>
             </div>
     </div>
+    </div>
+    <div class="grid grid-cols-3 lg:col-start-2 lg:row-start-1 font-bold  gap-4  pb-6 items-center  bg-white rounded-md lg:mx-32 mx-12">
 
-</div>
+      <p class="col-span-2 ml-2">Mes badges</p>
+
+            <img class="w-14 h-16 col-start-1" src="images/Medaille.png"/>
+            <img class="w-14 h-16 col-start-2" src="images/Medaille.png"/>
+            <img class="w-14 h-16 col-start-3" src="images/Medaille.png"/>
+      
+          </div>
+
+          <div class="mt-12 lg:mx-72 mx-32 rounded-sm border m-auto  bg-tahiti-100 h-11">
+            <p class="text-lg font-semibold text-white lg:ml-16 ml-9 mt-2">Voir +</p>
+          </div>
+  </div>
+
 
   </div>
 

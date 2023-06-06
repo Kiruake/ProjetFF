@@ -16,7 +16,7 @@
 
 import { RouterView } from 'vue-router'
 import PocketBase from 'pocketbase';
-import Auth from './components/Auth.vue';
+
 
 
 

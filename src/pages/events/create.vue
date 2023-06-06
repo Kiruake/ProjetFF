@@ -2,13 +2,15 @@
 
 <HeaderPage/>
 
-    <div class="container mx-auto mb-24">
+    <div class="lg:ml-40 mx-auto mb-24">
 
-        <h1 class="text-2xl text-white text-center font-bold mt-24 mb-6">Créer un événement</h1>
+        <h1 class="text-2xl text-white text-center lg:mt-16 lg:ml-24 font-bold mt-24 lg:mb-14 mb-6">Créer un événement</h1>
 
-        <form @submit.prevent="submitForm">
+        <form class="lg:ml-40" @submit.prevent="submitForm">
 
-            <div class="mb-4 pl-4">
+<div class="lg:flex lg:space-x-24 lg:mt-10"> 
+
+            <div class="mb-4 pl-4 ">
                 <label for="Nom" class="block font-bold mb-1 text-white">Nom de l'événement</label>
 
                 <input v-model="eventData.nom_event" type="text" id="Nom" class="border border-gray-300 rounded-md p-2"
@@ -32,7 +34,9 @@
                         @click="selectAddressSuggestion(suggestion)">{{ suggestion.display_name }}</li>
                 </ul>
             </div>
+    </div>
 
+   <div class="lg:flex lg:mt-12 lg:space-x-24">
              <div class="mb-4 pl-4">
                     <label for="Participants" class="block font-bold mb-1 text-white">Membres maximum</label>
 
@@ -56,16 +60,17 @@
         </div>
           </fieldset>
 
+</div> 
 
-    <div class="mb-4 pl-4">
+    <div class="mb-4 pl-4 lg:mt-10">
                     <label for="Description" class="block font-bold mb-1 text-white">Description de l'événement</label>
 
-                    <input v-model="eventData.description" type="textfield" id="Description" maxlength="50" class="border border-gray-300 rounded-md py-8 px-16 p-2"
+                    <input v-model="eventData.description" type="textfield" id="Description" maxlength="50" class="border border-gray-300 rounded-md lg:px-64 py-8 px-16 p-2"
                         required>
                 </div>
 
                 <button type="submit"
-                    class="m-auto flex bg-white hover:bg-indigo-300 py-2 px-4 rounded-md">Créer</button>
+                    class="m-auto flex bg-white hover:bg-indigo-300 py-2 px-4 lg:mt-16  rounded-md">Créer</button>
 
         </form>
 

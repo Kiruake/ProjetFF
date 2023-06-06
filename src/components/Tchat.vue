@@ -36,7 +36,7 @@
                     <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
                        <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-tahiti-100 text-white ">Ouais frérot, ca dit quoi? tu vas au match de demain? si t'as va viens on fait un event pour ramener des gens</span></div>
                     </div>
-                    <img src="/images/PP1.png" alt="My profile" class="w-6 h-6 rounded-full order-2">
+                    <img src="/images/XSSasuke.png" alt="My profile" class="w-6 h-6 rounded-full order-2">
                  </div>
               </div>
 
@@ -61,7 +61,7 @@
                     <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
                        <div><span class="px-4 py-2 rounded-lg inline-block rounded-br-none bg-tahiti-100 text-white ">MDRRRRR vas-y on va voir ca sale fou </span></div>
                     </div>
-                    <img src="/images/PP1.png" alt="My profile" class="w-6 h-6 rounded-full order-2">
+                    <img src="/images/XSSasuke.png" alt="My profile" class="w-6 h-6 rounded-full order-2">
                  </div>
               </div>
 
@@ -80,7 +80,7 @@
                        <div><span class="px-4 py-2 rounded-lg inline-block bg-tahiti-100 text-white ">Oui oui bon..</span></div>
 
                     </div>
-                    <img src="/images/PP1.png" alt="My profile" class="w-6 h-6 rounded-full order-2">
+                    <img src="/images/XSSasuke.png" alt="My profile" class="w-6 h-6 rounded-full order-2">
                  </div>
               </div>
            </div>
