@@ -19,7 +19,7 @@ const url = `/defis/${props.id}`
 <template>
 
 
-  <div class="w-[350px] h-[127px] mt-16 rounded-md bg-white m-auto relative">
+  <div class="w-[350px] h-[127px] lg:mt-40 mt-16 rounded-md bg-white m-auto relative">
     
     <div>
       <div class="absolute pl-[70px] pt-3  text-white">

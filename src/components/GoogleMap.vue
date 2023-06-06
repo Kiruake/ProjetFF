@@ -1,7 +1,7 @@
 
 
 <template>
-    <div class="mt-14 h-[690px]" id="map"></div>
+    <div class="mt-14 h-[690px] lg:h-[720px] lg:mt-0 " id="map"></div>
 </template>
 
 <script setup lang="ts">

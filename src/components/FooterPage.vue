@@ -16,15 +16,35 @@ function closeMenu() {
 </script>
 
 <template>
-    <footer class="fixed bottom-0 w-screen z-10">
-        <nav class="bg-white py-1 drop-shadow-3xl ">
+    <footer class="fixed bottom-0 lg:left-0 w-screen lg:w-40  z-10">
+        <nav class="bg-white py-1 lg:pb-12 drop-shadow-3xl lg:drop-shadow-none ">
             <div>
-                <ul class="grid grid-cols-5 items-center justify-items-center ">
-                    <li><RouterLink to="/" @click="closeMenu"><IconAccueil/></RouterLink></li>
+                <ul class="grid grid-cols-5  lg:grid-cols-1 items-center justify-items-center ">
+                    <div>
+                    <li class="lg:py-16"><RouterLink to="/" @click="closeMenu"><IconAccueil/></RouterLink></li>
+                    <p class="hidden lg:visible" >défQQQQQQQQis</p>
+                    </div>
+
+                    <div class="flex">
                     <li><RouterLink to="/defis" @click="closeMenu"><IconDefis/></RouterLink></li>
-                    <li><RouterLink to="/map" @click="closeMenu"><IconLoc/></RouterLink></li>
+                    <p class="lg:visible hidden" >défis</p>
+                    </div>
+
+                    <div>
+                    <li class="lg:py-16"><RouterLink to="/map" @click="closeMenu"><IconLoc/></RouterLink></li>
+                    <p class="lg:visible hidden" >défis</p>
+                    </div>
+
+                    <div>
                     <li><RouterLink to="/messages" @click="closeMenu"><IconMessage/></RouterLink></li>
-                    <li><RouterLink to="/profil" @click="closeMenu"><IconProfil/></RouterLink></li>
+                    <p class="lg:visible hidden" >défis</p>
+                    </div>
+
+                    <div>
+                    <li class="lg:py-16"><RouterLink to="/profil" @click="closeMenu"><IconProfil/></RouterLink></li>
+                    <p class="lg:visible hidden" >défis</p>
+                    </div>
+
                 </ul>
             </div>
         </nav>

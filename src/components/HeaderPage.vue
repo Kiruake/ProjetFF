@@ -42,8 +42,8 @@ const doLogout = () => {
 
 <template>
 
-     <header class=" flex justify-end z-10 fixed top-0 drop-shadow-3xl w-full translate-y-0 bg-white px-4 py-4 transition-all duration-300 ease-in-out">
-        <div class="flex gap-4 z-20">
+     <header class=" flex justify-end z-10 fixed top-0  drop-shadow-3xl w-full lg:w-40 translate-y-0 bg-white px-4 py-4 transition-all duration-300 ease-in-out">
+        <div class="flex  gap-4 z-20">
           <IconNotiVue/>
             <IconParametreVue @click= "activeMenu = !activeMenu" />
         </div>
