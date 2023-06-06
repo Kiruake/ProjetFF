@@ -5,25 +5,29 @@
     <Footerpage />
 
 
-<h3 class="text-center text-2xl text-white mt-8 mb-8">Evénements joués (3)</h3>
+<div class="lg:grid lg:grid-cols-2 mb-24">
 
-  <div class="font-bold space-y-8 pt-4 pb-6  bg-white rounded-md mx-12">
+<div class="lg:col-start-1 lg:ml-40">
 
-<p class="underline underline-offset-8 text-center">Historiques</p>
+<h3 class="text-center text-2xl text-white mt-8 lg:mb-12 mb-8">Evénements joués (3)</h3>
 
-        <div class="flex space-x-6 pl-5">
+  <div class="font-bold space-y-8 pt-4 pb-6  bg-white rounded-md lg:mx-36 mx-12">
+
+      <p class="underline underline-offset-8 text-center">Historiques</p>
+
+        <div class="flex space-x-6 lg:pl-14 pl-5">
         <img src="/images/Event1.png"/>
         <p class="pt-4 pr-6">ARENA</p>
         <p class="pt-4 text-gray-400">1j</p>
         </div>
 
-        <div class="flex space-x-6 pl-5">
+        <div class="flex space-x-6 lg:pl-14 pl-5">
         <img src="/images/Event2.png"/>
         <p class="pt-4 pr-7">SIUUU</p>
         <p class="pt-4 text-gray-400">3j</p>
         </div>
 
-        <div class="flex space-x-6 pl-5">
+        <div class="flex space-x-6 lg:pl-14 pl-5">
         <img src="/images/Event3.png"/>
         <p class="pt-4">Les sangs</p>
         <p class="pt-4 text-gray-400">6j</p>
@@ -31,18 +35,22 @@
 
   </div>
 
-  <div class="flex justify-center text-white  mb-32 space-x-7  mt-14  ">
+  </div>
 
-    <h2 class=" text-center mt-1 text-2xl">Mes IzyTrophies</h2>
+  <div class="flex justify-center text-white  mb-32 space-x-7 lg:mt-8  mt-14  ">
 
-    <div class="font-semibold text-2xl flex border-2 rounded-md px-2 py-1">
+    <h2 class=" text-center mt-1 lg:mt-0 lg:ml-40 text-2xl">Mes IzyTrophies</h2>
+
+    <div class="font-semibold text-2xl lg:border-none flex border-2 rounded-md px-2 py-1 lg:py-0">
         <p>90</p> 
-            <div class="pt-2 pl-2">
+            <div class="pt-2  pl-2">
             <IconTrophy/>
             </div>
     </div>
 
 </div>
+
+  </div>
 
 </template>
 

@@ -10,7 +10,7 @@
 
   </section>
 
-  <section class="relative pB-16">
+  <section class="relative lg:ml-40">
 
     <div class="container mx-auto px-4">
 
@@ -21,7 +21,7 @@
 
             <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
 
-                <div class="relative">
+                <div class="relative lg:mr-16">
                     <img  src="/images/PPSasuke.png" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
                 </div>
 
@@ -31,7 +31,7 @@
 
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
 
-                    <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                    <div class="flex lg:mr-32 justify-center py-4 lg:pt-4 pt-8">
 
                         <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">26</span><span class="text-sm text-blueGray-400">Amis</span>
@@ -47,9 +47,9 @@
                 </div>
           </div>
 
-          <div class="text-center">
+          <div class="text-center lg:mr-10">
                 
-                <h3 class="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">User Name</h3>
+                <h3 class="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">Ayrton</h3>
 
                 <div class="text-sm mt-0 mb-2 text-gray-400 font-bold uppercase">
                 <p class=" mr-2 text-sm ">Montbéliard, France</p>

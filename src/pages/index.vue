@@ -1,25 +1,21 @@
 <template>
     <HeaderPage/>
 
-        <div>
-            <div class="absolute top-0 mt-60 text-xl text-white">
-         <h3>Amis en ligne</h3>
-         </div>
+        <div class="lg:hidden">
+
              <TacheViolette class="absolute top-0"/>
          </div> 
 
-     <h2 class="text-white text-center mt-64">Bienvenue {{ currentUser?.name }}</h2>
+<div class="lg:ml-32">
 
-     {{ currentUser?.avatar }}
+     <h2 class="text-white text-center mt-64 lg:mt-32 lg:mb-16 ">Bienvenue {{ currentUser?.name }}</h2>
 
-    <h2 class="text-white text-center mt-16">Evenements à venir</h2>
+     <img class="shadow-xl rounded-full h-auto align-middle border-none lg:mb-20 m-auto mt-7 max-w-150-px lg:m-auto" src="/images/PPSasuke.png"/>
+         
 
-    
+<div class="lg:flex lg:space-x-32 lg:justify-center">
 
- 
-        
-    
-            <div class="flex justify-center mt-16">
+            <div class="flex justify-center lg:mt-12 mt-16">
           <RouterLink to="/Events"> 
 
 <div class="bg-tahiti-300 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">Tout les événements </div>
@@ -27,9 +23,18 @@
           </RouterLink>
             </div>
 
-    <RouterView/>  
-    
 
+             <div class="flex justify-center lg:mt-12 mt-7">
+              <RouterLink to="/Events/create"> 
+
+    <div class="bg-tahiti-300 border-2 border-white rounded-md text-center text-white font-semibold mb-40 px-2 py-2 ">Créer un événement</div>
+
+              </RouterLink>
+                </div>
+
+    <RouterView/>  
+</div>
+    </div>
     <Footerpage/>
        
 </template>

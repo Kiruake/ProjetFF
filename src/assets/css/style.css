@@ -30,3 +30,8 @@ body {
     @apply block pl-16 py-4;
   }
 
+
+    .disable-scroll {
+    overflow-y: hidden;
+}
+

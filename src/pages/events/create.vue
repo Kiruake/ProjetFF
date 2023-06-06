@@ -2,7 +2,7 @@
 
 <HeaderPage/>
 
-    <div class="container mx-auto">
+    <div class="container mx-auto mb-24">
 
         <h1 class="text-2xl text-white text-center font-bold mt-24 mb-6">Créer un événement</h1>
 
