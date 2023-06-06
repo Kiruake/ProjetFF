@@ -1,6 +1,6 @@
 <template>
 
-        <div class="flex justify-center mt-32 mb-20 pt-14">
+        <div class="flex justify-center mt-32 lg:mt-10 mb-20 pt-14">
             <LogoIzymate/>
         </div>
 

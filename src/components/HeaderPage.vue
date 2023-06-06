@@ -53,7 +53,7 @@ const doLogout = () => {
 
           
           
-         	  <nav class="invisible opacity-0 z-10 fixed inset-0 h-96 lg:ml-40 lg:w-64 w-screen bg-white text-2xl text-white transition-all duration-300 ease-in-out"
+         	  <nav class="invisible opacity-0 z-10 fixed inset-0 h-screen lg:h-96 lg:rounded-xs lg:drop-shadow-md lg:ml-40 lg:w-64 w-screen bg-white text-2xl text-white transition-all duration-300 ease-in-out"
             :class="{ '!visible opacity-100': activeMenu }" >
 
           <VectorVioletMenuVue class="absolute lg:hidden top-14"/>

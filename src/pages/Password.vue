@@ -4,7 +4,7 @@
         <LogoIzymate />
     </div>
 
-    <h2>Password</h2>
+    <h2 class="text-center">Password</h2>
 
     <div class=" flex flex-col justify-center items-center mt-10 ">
         

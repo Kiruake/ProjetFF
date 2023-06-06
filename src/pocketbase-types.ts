@@ -3,10 +3,8 @@
 */
 
 export enum Collections {
-	Chat = "chat",
 	Defis = "defis",
 	Events = "events",
-	Messages = "messages",
 	Users = "users",
 }
 
@@ -34,10 +32,6 @@ export type AuthSystemFields<T = never> = {
 
 // Record types for each collection
 
-export type ChatRecord = {
-	users?: RecordIdString[]
-}
-
 export type DefisRecord = {
 	image?: string
 	date?: IsoDateString
@@ -63,40 +57,28 @@ export type EventsRecord = {
 	user_participation?: RecordIdString[]
 }
 
-export type MessagesRecord = {
-	chat?: RecordIdString
-	users?: RecordIdString
-	content?: string
-}
-
 export type UsersRecord = {
 	name?: string
 	avatar?: string
-	points_defis?: RecordIdString[]
+	points_gagne?: RecordIdString[]
 	participation_events?: RecordIdString[]
 }
 
 // Response types include system fields and match responses from the PocketBase API
-export type ChatResponse<Texpand = unknown> = Required<ChatRecord> & BaseSystemFields<Texpand>
 export type DefisResponse<Texpand = unknown> = Required<DefisRecord> & BaseSystemFields<Texpand>
 export type EventsResponse<Texpand = unknown> = Required<EventsRecord> & BaseSystemFields<Texpand>
-export type MessagesResponse<Texpand = unknown> = Required<MessagesRecord> & BaseSystemFields<Texpand>
 export type UsersResponse<Texpand = unknown> = Required<UsersRecord> & AuthSystemFields<Texpand>
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
-	chat: ChatRecord
 	defis: DefisRecord
 	events: EventsRecord
-	messages: MessagesRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
-	chat: ChatResponse
 	defis: DefisResponse
 	events: EventsResponse
-	messages: MessagesResponse
 	users: UsersResponse
 }

@@ -66,8 +66,10 @@ console.log(urlImgEvent)
 
         <div class="flex justify-center mt-10 mb-36 lg:mb-10 ">
     
-            <div class="bg-tahiti-300 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">Rejoindre</div>
 
+            <RouterLink to="/TchatPrive">
+            <div class="bg-tahiti-300 border-2 border-white rounded-md text-center text-white font-semibold px-2 py-2 ">Rejoindre</div>
+    </RouterLink>
                 </div>
 
     </div>
