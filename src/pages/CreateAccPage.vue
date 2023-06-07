@@ -1,7 +1,7 @@
 <template>
 
          <div class="flex justify-center mt-32 lg:mt-10 mb-20 pt-14">
-                <LogoIzymate/>
+                <LogoIzygoal/>
             </div>
 
         <div class=" flex flex-col justify-center items-center mt-10 ">
@@ -39,6 +39,7 @@ import {pb} from '@/backend'
 import { onMounted, ref } from 'vue';
 import LogoIzymate from '@/components/icons/LogoIzymate.vue';
 import { useRouter } from 'vue-router';
+import LogoIzygoal from '@/components/icons/LogoIzygoal.vue';
 
 const router = useRouter();
 
